@@ -1,0 +1,31 @@
+.class public interface abstract LX/Hpc;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements LX/Hy9;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LX/Hry;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        LX/Hpb;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "LX/Hy9<",
+        "Lcom/xt/edit/cutoutimage/CutoutFragment;",
+        ">;"
+    }
+.end annotation

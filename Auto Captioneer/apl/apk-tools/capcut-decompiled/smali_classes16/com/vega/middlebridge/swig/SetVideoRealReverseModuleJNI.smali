@@ -1,0 +1,65 @@
+.class public Lcom/vega/middlebridge/swig/SetVideoRealReverseModuleJNI;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    :try_start_0
+    const-string v0, "middle-bridge"
+
+    invoke-static {v0}, Lcom/GlobalProxyLancet;->com_vega_launcher_lancet_SoLoadLancet_loadLibrary(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static final native SetVideoRealReverseReqStruct_SWIGSmartPtrUpcast(J)J
+.end method
+
+.method public static final native SetVideoRealReverseReqStruct_isRealReverse_get(JLcom/vega/middlebridge/swig/SetVideoRealReverseReqStruct;)Z
+.end method
+
+.method public static final native SetVideoRealReverseReqStruct_isRealReverse_set(JLcom/vega/middlebridge/swig/SetVideoRealReverseReqStruct;Z)V
+.end method
+
+.method public static final native SetVideoRealReverseReqStruct_segmentID_get(JLcom/vega/middlebridge/swig/SetVideoRealReverseReqStruct;)Ljava/lang/String;
+.end method
+
+.method public static final native SetVideoRealReverseReqStruct_segmentID_set(JLcom/vega/middlebridge/swig/SetVideoRealReverseReqStruct;Ljava/lang/String;)V
+.end method
+
+.method public static final native SetVideoRealReverseRespStruct_SWIGSmartPtrUpcast(J)J
+.end method
+
+.method public static final native SetVideoRealReverseRespStruct_enableRealReverse_get(JLcom/vega/middlebridge/swig/SetVideoRealReverseRespStruct;)Z
+.end method
+
+.method public static final native SetVideoRealReverseRespStruct_enableRealReverse_set(JLcom/vega/middlebridge/swig/SetVideoRealReverseRespStruct;Z)V
+.end method
+
+.method public static final native delete_SetVideoRealReverseReqStruct(J)V
+.end method
+
+.method public static final native delete_SetVideoRealReverseRespStruct(J)V
+.end method
+
+.method public static final native kSetVideoRealReverse_get()Ljava/lang/String;
+.end method
+
+.method public static final native new_SetVideoRealReverseReqStruct()J
+.end method
+
+.method public static final native new_SetVideoRealReverseRespStruct()J
+.end method

@@ -1,0 +1,87 @@
+.class public Landroidx/core/graphics/TypefaceCompatBaseImpl$1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements LX/0QL;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/core/graphics/TypefaceCompatBaseImpl;->a([LX/0RJ;I)LX/0RJ;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "LX/0QL<",
+        "LX/0RJ;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Landroidx/core/graphics/TypefaceCompatBaseImpl;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/core/graphics/TypefaceCompatBaseImpl;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/core/graphics/TypefaceCompatBaseImpl$1;->a:Landroidx/core/graphics/TypefaceCompatBaseImpl;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(LX/0RJ;)I
+    .locals 1
+
+    invoke-virtual {p1}, LX/0RJ;->c()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public synthetic a(Ljava/lang/Object;)Z
+    .locals 1
+
+    check-cast p1, LX/0RJ;
+
+    invoke-virtual {p0, p1}, Landroidx/core/graphics/TypefaceCompatBaseImpl$1;->b(LX/0RJ;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public synthetic b(Ljava/lang/Object;)I
+    .locals 1
+
+    check-cast p1, LX/0RJ;
+
+    invoke-virtual {p0, p1}, Landroidx/core/graphics/TypefaceCompatBaseImpl$1;->a(LX/0RJ;)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public b(LX/0RJ;)Z
+    .locals 1
+
+    invoke-virtual {p1}, LX/0RJ;->d()Z
+
+    move-result v0
+
+    return v0
+.end method

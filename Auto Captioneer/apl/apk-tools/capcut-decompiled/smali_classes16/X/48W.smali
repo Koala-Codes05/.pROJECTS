@@ -1,0 +1,223 @@
+.class public final LX/48W;
+.super Lkotlin/jvm/internal/Lambda;
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/vega/commonedit/commoneditor/CommonEditorReport;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Ljava/util/List<",
+        "+",
+        "Ljava/lang/String;",
+        ">;>;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:LX/48W;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, LX/48W;
+
+    invoke-direct {v0}, LX/48W;-><init>()V
+
+    sput-object v0, LX/48W;->a:LX/48W;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/util/List;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    sget-object v3, Lcom/vega/core/context/SPIService;->INSTANCE:Lcom/vega/core/context/SPIService;
+
+    invoke-virtual {v3}, Lcom/vega/core/context/SPIService;->getKoin()Lorg/koin/core/Koin;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0}, Lorg/koin/core/Koin;->getScopeRegistry()Lorg/koin/core/registry/ScopeRegistry;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/koin/core/registry/ScopeRegistry;->getRootScope()Lorg/koin/core/scope/Scope;
+
+    move-result-object v1
+
+    const-class v0, LX/3ms;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Reflection;->getOrCreateKotlinClass(Ljava/lang/Class;)Lkotlin/reflect/KClass;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0, v2, v2}, Lorg/koin/core/scope/Scope;->getOrNull(Lkotlin/reflect/KClass;Lorg/koin/core/qualifier/Qualifier;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "get "
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-class v0, LX/3ms;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v0, " -> null, use Proxy"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "SPIServiceDebug"
+
+    invoke-static {v0, v1}, Lcom/lm/components/logservice/alog/BLog;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    new-instance v2, Ljava/lang/Throwable;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "SPIService getNull "
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-class v0, LX/3ms;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v2, v0}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v2}, Lcom/bytedance/services/apm/api/EnsureManager;->ensureNotReachHere(Ljava/lang/Throwable;)V
+
+    const-class v0, LX/3ms;
+
+    invoke-virtual {v3, v0}, Lcom/vega/core/context/SPIService;->getDynamicProxy(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    :cond_0
+    check-cast v0, LX/48G;
+
+    invoke-interface {v0}, LX/48G;->go()Lcom/lemon/lv/config/CommonEditorConfig;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/lemon/lv/config/CommonEditorConfig;->getPolishPresetConfig()Ljava/util/List;
+
+    move-result-object v1
+
+    new-instance v2, Ljava/util/ArrayList;
+
+    const/16 v0, 0xa
+
+    invoke-static {v1, v0}, Lkotlin/collections/CollectionsKt__IterablesKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+
+    move-result v0
+
+    invoke-direct {v2, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, LX/4CM;
+
+    invoke-virtual {v0}, LX/4CM;->b()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {v2, v0}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_1
+    check-cast v2, Ljava/util/List;
+
+    return-object v2
+
+    :cond_2
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "Required value was null."
+
+    invoke-virtual {v0}, Ljava/lang/String;->toString()Ljava/lang/String;
+
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, LX/48W;->a()Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method
