@@ -1,0 +1,33 @@
+.class public final synthetic Lcom/xt/retouch/beautymakeup/aimakeup/-$$Lambda$AIMakeupBeautyFragment$1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/xt/retouch/beautymakeup/aimakeup/AIMakeupBeautyFragment;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/xt/retouch/beautymakeup/aimakeup/AIMakeupBeautyFragment;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/xt/retouch/beautymakeup/aimakeup/-$$Lambda$AIMakeupBeautyFragment$1;->f$0:Lcom/xt/retouch/beautymakeup/aimakeup/AIMakeupBeautyFragment;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xt/retouch/beautymakeup/aimakeup/-$$Lambda$AIMakeupBeautyFragment$1;->f$0:Lcom/xt/retouch/beautymakeup/aimakeup/AIMakeupBeautyFragment;
+
+    invoke-static {v0, p1}, Lcom/xt/retouch/beautymakeup/aimakeup/AIMakeupBeautyFragment;->b(Lcom/xt/retouch/beautymakeup/aimakeup/AIMakeupBeautyFragment;Landroid/view/View;)V
+
+    return-void
+.end method

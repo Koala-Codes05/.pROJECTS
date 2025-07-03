@@ -1,0 +1,41 @@
+.class public final Lcom/google/android/gms/internal/ads/zzeok;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzhfc;
+
+
+# instance fields
+.field public final zza:Lcom/google/android/gms/internal/ads/zzhfu;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzhfu;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzeok;->zza:Lcom/google/android/gms/internal/ads/zzhfu;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic zzb()Ljava/lang/Object;
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzeok;->zza:Lcom/google/android/gms/internal/ads/zzhfu;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzhfu;->zzb()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Set;
+
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzeoj;
+
+    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/ads/zzeoj;-><init>(Ljava/util/Set;)V
+
+    return-object v0
+.end method
